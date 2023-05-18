@@ -1,0 +1,20 @@
+.pg1bar {
+    width: 1508px;
+    height: 137px;
+}
+
+.browse {
+    background-color: #F8F8F8;
+    height: 506px;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.fileicon {
+    margin-top: 175px;
+    margin-left: 680px;
+}
+
+.bf {
+    flex-direction: column;
+}
