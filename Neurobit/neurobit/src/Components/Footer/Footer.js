@@ -6,8 +6,9 @@ const Footer = () => {
         <div>
             <Button variant="outlined">Back</Button>
             <h1>Cancel Message</h1>
-            <Button variant="contained">Next</Button>
-
+            <Button variant="outlined" href="#outlined-buttons">
+                Link
+            </Button>
         </div>
     )
 }

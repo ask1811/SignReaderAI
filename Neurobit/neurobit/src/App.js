@@ -4,11 +4,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Side from './Components/Side/Side';
 import Upload from './Pages/Upload/Upload';
 import Footer from './Components/Footer/Footer';
+import Stepper from './Components/Stepper/Stepper';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Side />
+        <Stepper />
         <Routes>
           <Route path='/' element={<Upload />} />
         </Routes>
