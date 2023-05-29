@@ -1,20 +1,48 @@
 .pg1bar {
     width: 1508px;
     height: 137px;
+    margin-top: 5rem;
+    margin-left: 2rem;
 }
 
 .browse {
     background-color: #F8F8F8;
     height: 506px;
-    margin-left: auto;
-    margin-top: auto;
+    margin-left: 2rem;
+    margin-top: 72px;
+    width: 1444px;
 }
 
 .fileicon {
-    margin-top: 175px;
+    margin-top: 200px;
     margin-left: 680px;
 }
 
 .bf {
-    flex-direction: column;
+    margin-top: 250px;
+    margin-left: 680px;
+}
+
+.uplo {
+    flex-direction: row;
+}
+
+.bro {
+    flex-direction: row;
+    display: flex;
+}
+
+.dr {
+    margin-left: 680px;
+}
+
+.can {
+    height: 25px;
+    width: 180px;
+    margin-left: -350px;
+}
+
+.spacan {
+    height: 25px;
+    width: 180px;
 }

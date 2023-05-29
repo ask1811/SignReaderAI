@@ -1,4 +1,4 @@
-.credit {
+/* .credit {
     margin-top: 500px;
     width: 248px;
     height: 145px;
@@ -8,4 +8,16 @@
 .Sidebar {
     width: 300px;
     height: 1080px;
+    background-color: #04273A;
+    margin-left: 0px;
 }
+
+.Menuitem {
+    text-align: center;
+    color: white;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+} */

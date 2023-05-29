@@ -19,41 +19,26 @@
     font-size: 18px;
 }
 
-.wrapper1 {
+.wrapper {
+    /* margin: 0px;
+    width: 1508px;
+    text-align: center; */
     margin-top: 10px;
     background-color: #f0ffff;
-}
-
-.wrapper2 {
-    margin-top: 10px;
-    background-color: #f0f0ff;
-}
-
-.wrapper3 {
-    margin-top: 10px;
-    background-color: #fff0f0;
-}
-
-.wrapper4 {
-    margin-top: 10px;
-    background-color: #fff0fa;
-}
-
-.wrapper5 {
-    margin-top: 10px;
-    background-color: #f1fff0;
 }
 
 nav {
     margin: 2rem;
     width: 1508px;
+    /* height: 102px; */
     text-align: center;
+    /* margin-top: 80px; */
     justify-content: space-around;
 }
 
 nav ul {
     text-align: left;
-    display: inline;
+    /* display: inline; */
     margin: 0;
     padding: 1em 1em 1em 0;
     list-style: none;
@@ -61,7 +46,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    /* display: inline-block; */
     margin-right: .01em;
     position: relative;
     padding: 1em 3em;
@@ -105,6 +90,7 @@ nav ul li ul {
 }
 
 nav ul li ul li {
+    /* display: block; */
     color: white;
     text-shadow: 0 10px 0 #fff;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg);
@@ -115,10 +101,14 @@ nav ul li ul li:hover {
 }
 
 nav ul li:hover ul {
+    /* display: block; */
     opacity: 1;
     visibility: visible;
 }
 
+/* .wholemap {
+    background-color: #fdf8f8;
+} */
 
 .spindle {
     position: static;
@@ -141,22 +131,19 @@ nav ul li:hover ul {
 
 .bro {
     justify-content: space-around;
-    margin-top: 20px;
 }
 
 .but {
     margin-left: 1100px;
     top: 1000000000px;
-    cursor: pointer;
+    /* margin-block-start: -100px; */
 }
 
-.check {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-around;
-    background-color: #fafff0;
-}
-
+/* 
 .addi {
     justify-content: flex-start;
 }
+
+.spi {
+    justify-content: center;
+} */

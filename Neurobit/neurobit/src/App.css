@@ -5,28 +5,40 @@
     margin-left: 6px;
 }
 
-.Sidebar {
+.Side {
     width: 300px;
     height: 1080px;
+    background-color: #04273a;
+    margin-left: 0px;
 }
 
-.pg1bar {
-    width: 1508px;
-    height: 137px;
+.Menuitem {
+    text-align: center;
+    color: white;
 }
 
-.browse {
-    background-color: #F8F8F8;
-    height: 506px;
-    margin-left: auto;
-    margin-top: auto;
+.app {
+    min-height: 100vh;
+    display: grid;
 }
 
-.fileicon {
-    margin-top: 175px;
-    margin-left: 680px;
+.up {
+    flex-direction: row;
 }
 
-.bf {
-    flex-direction: column;
+.test {
+    margin-left: 5rem;
+}
+
+.rea {
+    margin-left: 79px;
+    color: white;
+}
+
+.men {
+    width: 200px;
+}
+
+-webkit-autofill {
+    background-color: none;
 }

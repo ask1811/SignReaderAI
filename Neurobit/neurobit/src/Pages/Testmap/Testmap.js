@@ -1,12 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { DataContext } from '../../Components/DataContext';
-import './Map.css';
+import './Testmap.css';
 import pg2bar from '../../Images/pg2bar.png';
 import Button from '@mui/material/Button';
-import Checkbox from '@mui/material/Checkbox';
-import FormControlLabel from '@mui/material/FormControlLabel';
+// import Checkbox from '@mui/material/Checkbox';
+// import FormControlLabel from '@mui/material/FormControlLabel';
 import data from '../../schema.json'
-const Map = () => {
+// export const DataContext = createContext();
+const Testmap = () => {
     const { updateData } = useContext(DataContext);
     const [inputData, setInputData] = useState('');
 
@@ -20,8 +21,6 @@ const Map = () => {
         localStorage.setItem('myData', inputData);
         setInputData('');
     };
-
-
     const [rowsa, setRowsa] = useState(['row1']);
     const addRowa = () => {
         const newRow = `row${rowsa.length + 1}`;
@@ -55,69 +54,56 @@ const Map = () => {
                 <img className='pg2bar' src={pg2bar} />
                 <div className='blu'>
                     <span>Channel</span>
-                    <span className='pri'>Primary Channel(default select)</span>
-                    <span className='refr'>Reference Channel(default N/A)</span>
+                    <span>Primary Channel(default select)</span>
+                    <span>Reference Channel(default N/A)</span>
                 </div>
-                <div>
-                    <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
+                    <div>
                         {rowsa.map((row1) => (
                             <Row key={row1} row1={row1} value={inputData} onChange={handleInputChange} />
                         ))}
                         <button className='but' onClick={addRowa}>Add Backup Channel</button>
-                    </form>
-                </div>
-                <div>
-                    <form onSubmit={handleSubmit}>
+                    </div>
+                    <div>
                         {rowsb.map((row2) => (
-                            <R2ow key={row2} row2={row2} value={inputData} onChange={handleInputChange} />
+                            <R2ow key={row2} row2={row2} />
                         ))}
                         <button className='but' onClick={addRowb}>Add Backup Channel</button>
-                    </form>
-                </div>
-                <div>
-                    <form onSubmit={handleSubmit}>
+                    </div>
+                    <div>
                         {rowsc.map((row3) => (
-                            <R3ow key={row3} row3={row3} value={inputData} onChange={handleInputChange} />
+                            <R3ow key={row3} row3={row3} />
                         ))}
                         <button className='but' onClick={addRowc}>Add Backup Channel</button>
-                    </form>
-                </div>
-                <div>
-                    <form onSubmit={handleSubmit}>
+                    </div>
+                    <div>
                         {rowsd.map((row4) => (
-                            <R4ow key={row4} row4={row4} value={inputData} onChange={handleInputChange} />
+                            <R4ow key={row4} row4={row4} />
                         ))}
                         <button className='but' onClick={addRowd}>Add Backup Channel</button>
-                    </form>
-                </div>
-                <div>
-                    <form onSubmit={handleSubmit}>
+                    </div>
+                    <div>
                         {rowse.map((row5) => (
-                            <R5ow key={row5} row5={row5} value={inputData} onChange={handleInputChange} />
+                            <R5ow key={row5} row5={row5} />
                         ))}
                         <button className='but' onClick={addRowe}>Add Backup Channel</button>
-                    </form>
-                </div>
-                <div className='check'>
-                    <span><h3>Additional Settings</h3></span>
-                    <span><FormControlLabel className='spi' control={<Checkbox />} label="Spindle" /></span>
-                    <span><FormControlLabel className='' control={<Checkbox />} label="Artifacts" /></span>
-                </div>
+                    </div>
+                </form>
                 <div className='bro'>
-                    <span><Button variant="outlined" href="../">Back</Button></span>
+                    <span><Button variant="outlined" href="../Upload.js">Back</Button></span>
                     <span> <h3 className='can'>Cancel Montage</h3></span>
                     <span><Button variant="contained" href="../Preview.js">
                         Next
                     </Button></span>
                 </div>
-            </div >
+            </div>
         </>
     )
 }
 const Row = ({ row1 }) => {
     return (
         <>
-            <div className="wrapper1">
+            <div className="wrapper">
                 <nav>
                     <ul>
                         <li><a>
@@ -162,7 +148,7 @@ const Row = ({ row1 }) => {
 const R2ow = ({ row2 }) => {
     return (
         <>
-            <div className="wrapper2">
+            <div className="wrapper">
                 <nav>
                     <ul>
                         <li><a>
@@ -206,7 +192,7 @@ const R2ow = ({ row2 }) => {
 const R3ow = ({ row3 }) => {
     return (
         <>
-            <div className="wrapper3">
+            <div className="wrapper">
                 <nav>
                     <ul>
                         <li><a>
@@ -250,7 +236,7 @@ const R3ow = ({ row3 }) => {
 const R4ow = ({ row4 }) => {
     return (
         <>
-            <div className="wrapper4">
+            <div className="wrapper">
                 <nav>
                     <ul>
                         <li><a>
@@ -294,7 +280,7 @@ const R4ow = ({ row4 }) => {
 const R5ow = ({ row5 }) => {
     return (
         <>
-            <div className="wrapper5">
+            <div className="wrapper">
                 <nav>
                     <ul>
                         <li><a>
@@ -336,4 +322,4 @@ const R5ow = ({ row5 }) => {
     );
 };
 
-export default Map;
+export default Testmap;

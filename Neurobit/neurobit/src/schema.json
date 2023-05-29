@@ -5,17 +5,42 @@
     ],
     "version": 1,
     "channels": [
-        "channel-1",
-        "channel-2",
-        "channel-3",
-        "channel-4",
-        "channel-5",
-        "channel-6",
-        "channel-7",
-        "channel-8",
-        "channel-9",
-        "channel-9",
-        "channel-10"
+        {
+            "id": "channel-1",
+            "name": "C3"
+        },
+        {
+            "id": "channel-2",
+            "name": "A2"
+        },
+        {
+            "id": "channel-3",
+            "name": "C4"
+        },
+        {
+            "id": "channel-4",
+            "name": "A1"
+        },
+        {
+            "id": "channel-5",
+            "name": "EOGL"
+        },
+        {
+            "id": "channel-6",
+            "name": "EOGR"
+        },
+        {
+            "id": "channel-7",
+            "name": "EMG"
+        },
+        {
+            "id": "channel-8",
+            "name": "NULL"
+        },
+        {
+            "id": "channel-9",
+            "name": "N/A"
+        }
     ],
     "optionals": [
         {
