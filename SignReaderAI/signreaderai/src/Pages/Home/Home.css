@@ -1,0 +1,27 @@
+.content {
+    background-image: url(../../Images/Sign.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.details {
+    color: #161313;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.dtl {
+    color: white;
+    text-decoration: none;
+}
+
+.hodiv {
+
+    font-size: 30px;
+}
+
+.lorem {
+    background-color: rgb(238, 243, 193);
+    border-radius: 15px;
+}
